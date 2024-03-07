@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
   <title>HTML Switch Control Sample</title>
   <meta name="viewport" content="width=device-width">
+  <meta name="description" content="HTML &lt;input type=checkbox switch&gt; example." />
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
   <link href="css/styles.min.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <main class="grid place-content-center min-h-screen bg-white py-16 px-4 space-y-16">
+  <main class="grid place-content-center min-h-dvh bg-white py-16 px-4 space-y-16">
     <div class="prose">
       <h1>HTML Switch Control Sample</h1>
       <p>2024年3月7日現在、<code>&lt;input type="checkbox" switch&gt;</code> をサポートしているのは Safari 17.4 のみです。</p>
     </div>
+
     <div class="space-y-6">
       <h2 class="text-2xl font-semibold">Basic</h2>
       <div>
@@ -30,11 +31,13 @@
         <details>
           <summary class="py-4 font-bold text-lg">HTML</summary>
           <div class="prose max-w-none">
-            <pre tabindex="0" class="language-html"><code>&lt;input type="checkbox" switch checked&gt;</code></pre>
+            <pre tabindex="0"
+              class="language-html"><code>&lt;input type=&quot;checkbox&quot; switch checked&gt;</code></pre>
           </div>
         </details>
       </div>
     </div>
+
     <div class="space-y-6">
       <h2 class="text-2xl font-semibold">with CSS <code>accent-color</code></h2>
       <div>
@@ -48,7 +51,8 @@
         <details>
           <summary class="py-4 font-bold text-lg">HTML</summary>
           <div class="prose max-w-none">
-            <pre tabindex="0" class="language-html"><code>&lt;input type="checkbox" switch checked&gt;</code></pre>
+            <pre tabindex="0"
+              class="language-html"><code>&lt;input type=&quot;checkbox&quot; switch checked&gt;</code></pre>
           </div>
         </details>
         <details>
@@ -60,9 +64,10 @@
           </div>
         </details>
       </div>
-
     </div>
+
   </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/a11y-dark.min.js"></script>
   <script>hljs.highlightAll();</script>
 </body>
