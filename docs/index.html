@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Switch Control Sample</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="css/styles.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
+
+<body>
+  <main class="grid place-content-center min-h-screen bg-white py-16 px-4 space-y-16">
+    <div class="prose">
+      <h1>HTML Switch Control Sample</h1>
+      <p>2024年3月7日現在、<code>&lt;input type="checkbox" switch&gt;</code> をサポートしているのは Safari 17.4 のみです。</p>
+    </div>
+    <div class="space-y-6">
+      <h2 class="text-2xl font-semibold">Basic</h2>
+      <div>
+        <label class="inline-flex gap-2 items-center">
+          <input type="checkbox" switch checked>
+          Toggle switch
+        </label>
+      </div>
+      <div class="max-w-5xl mx-auto p-6 bg-gray-50/80 rounded-lg">
+        <h3 class="text-xl font-bold pb-4 border-b border-gray-200">ソースコード</h3>
+        <details>
+          <summary class="py-4 font-bold text-lg">HTML</summary>
+          <div class="prose max-w-none">
+            <pre tabindex="0" class="language-html"><code>&lt;input type="checkbox" switch checked&gt;</code></pre>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div class="space-y-6">
+      <h2 class="text-2xl font-semibold">with CSS <code>accent-color</code></h2>
+      <div>
+        <label class="inline-flex gap-2 items-center">
+          <input type="checkbox" switch checked class="accent-red-600">
+          Toggle switch
+        </label>
+      </div>
+      <div class="max-w-5xl mx-auto p-6 bg-gray-50/80 rounded-lg">
+        <h3 class="text-xl font-bold pb-4 border-b border-gray-200">ソースコード</h3>
+        <details>
+          <summary class="py-4 font-bold text-lg">HTML</summary>
+          <div class="prose max-w-none">
+            <pre tabindex="0" class="language-html"><code>&lt;input type="checkbox" switch checked&gt;</code></pre>
+          </div>
+        </details>
+        <details>
+          <summary class="py-4 font-bold text-lg">CSS</summary>
+          <div class="prose max-w-none">
+            <pre tabindex="0" class="language-css"><code>input[switch] {
+  accent-color: #dc2626;
+}</code></pre>
+          </div>
+        </details>
+      </div>
+
+    </div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/a11y-dark.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</body>
+
+</html>
