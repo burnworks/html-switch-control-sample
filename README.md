@@ -1,3 +1,3 @@
 # html-switch-control-sample 
 
-HTML &lt;input type=checkbox switch&gt; example.
+HTML `<input type="checkbox" switch>` example.
