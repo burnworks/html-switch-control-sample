@@ -17,7 +17,7 @@
 
     .traditional::before {
         content: "";
-        @apply rounded-full w-7 h-7 bg-white absolute left-1 transition-transform;
+        @apply rounded-full w-7 h-7 bg-white absolute left-1 transition-transform shadow-md;
     }
 
     .traditional:has(input[type="checkbox"]:checked)::before {

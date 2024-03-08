@@ -101,17 +101,19 @@
 }
 
 .traditional::before {
-  content: "";
-  position: absolute;
-  left: .25rem;
-  height: 1.75rem;
-  width: 1.75rem;
-  border-radius: 9999px;
-  --bg-opacity: 1;
-  background-color: rgb(255 255 255/var(--bg-opacity));
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(.4,0,.2,1);
-  transition-duration: .15s;
+	content: "";
+	position: absolute;
+	left: .25rem;
+	height: 1.75rem;
+	width: 1.75rem;
+	border-radius: 9999px;
+	--bg-opacity: 1;
+	background-color: rgb(255 255 255/var(--bg-opacity));
+	--shadow: 0 4px 6px -1px #0000001a,0 2px 4px -2px #0000001a;
+	box-shadow: 0 0 #0000 ,0 0 #0000), 0 0 #0000, 0 0 #0000), var(--shadow);
+	transition-property: transform;
+	transition-timing-function: cubic-bezier(.4,0,.2,1);
+	transition-duration: .15s;
 }
 
 .traditional:has(input[type="checkbox"]:checked)::before {
