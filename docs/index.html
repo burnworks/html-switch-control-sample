@@ -34,7 +34,100 @@
     </div>
 
     <div class="space-y-6 max-w-5xl mx-auto">
-      <h2 class="text-2xl font-semibold">Basic</h2>
+      <div class="prose">
+        <h2 class="text-2xl font-semibold">Traditional</h2>
+        <p><code>switch</code> 属性に対応していない環境向けの実装例</p>
+      </div>
+      <div>
+        <label class="inline-flex gap-2 items-center">
+          <span class="traditional">
+            <input type="checkbox" checked class="sr-only">
+          </span>
+          Toggle switch
+        </label>
+      </div>
+      <div class="p-6 bg-gray-50/80 rounded-lg">
+        <h3 class="text-xl font-bold pb-4 border-b border-gray-200">ソースコード</h3>
+        <details>
+          <summary class="py-4 font-bold text-lg">HTML</summary>
+          <div class="prose max-w-none">
+            <pre tabindex="0" class="language-html"><code>&lt;label&gt;
+  &lt;span class=&quot;traditional&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; checked&gt;
+  &lt;/span&gt;
+  Toggle switch
+&lt;/label&gt;</code></pre>
+          </div>
+        </details>
+        <details>
+          <summary class="py-4 font-bold text-lg">CSS</summary>
+          <div class="prose max-w-none">
+            <pre tabindex="0" class="language-css"><code>.traditional {
+  position: relative;
+  display: inline-flex;
+  height: 2rem;
+  width: 4rem;
+  align-items: center;
+  border-radius: 9999px;
+}
+
+.traditional:focus-within {
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  outline-color: #2563eb;
+}
+
+.traditional input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.traditional:has(input[type="checkbox"]) {
+  --bg-opacity: 1;
+  background-color: rgb(152 152 157/var(--bg-opacity));
+}
+
+.traditional:has(input[type="checkbox"]:checked) {
+  --bg-opacity: 1;
+  background-color: rgb(52 199 89/var(--bg-opacity));
+}
+
+.traditional::before {
+  content: "";
+  position: absolute;
+  left: .25rem;
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 9999px;
+  --bg-opacity: 1;
+  background-color: rgb(255 255 255/var(--bg-opacity));
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .15s;
+}
+
+.traditional:has(input[type="checkbox"]:checked)::before {
+  --translate-x: 1.75rem;
+  transform: translate(var(--translate-x), 0);
+}</code></pre>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <div class="space-y-6 max-w-5xl mx-auto">
+      <div class="prose">
+        <h2 class="text-2xl font-semibold">Basic</h2>
+        <p><code>switch</code> 属性を使用した最も基本的な実装例</p>
+      </div>
       <div>
         <label class="inline-flex gap-2 items-center">
           <input type="checkbox" switch checked>
@@ -46,15 +139,20 @@
         <details>
           <summary class="py-4 font-bold text-lg">HTML</summary>
           <div class="prose max-w-none">
-            <pre tabindex="0"
-              class="language-html"><code>&lt;input type=&quot;checkbox&quot; switch checked&gt;</code></pre>
+            <pre tabindex="0" class="language-html"><code>&lt;label&gt;
+  &lt;input type=&quot;checkbox&quot; switch checked&gt;
+  Toggle switch
+&lt;/label&gt;</code></pre>
           </div>
         </details>
       </div>
     </div>
 
     <div class="space-y-6 max-w-5xl mx-auto">
-      <h2 class="text-2xl font-semibold">with CSS <code>accent-color</code></h2>
+      <div class="prose">
+        <h2 class="text-2xl font-semibold">with CSS <code>accent-color</code></h2>
+        <p>CSS <code>accent-color</code> を指定した実装例</p>
+      </div>
       <div>
         <label class="inline-flex gap-2 items-center">
           <input type="checkbox" switch checked class="accent-red-600">
@@ -66,8 +164,10 @@
         <details>
           <summary class="py-4 font-bold text-lg">HTML</summary>
           <div class="prose max-w-none">
-            <pre tabindex="0"
-              class="language-html"><code>&lt;input type=&quot;checkbox&quot; switch checked&gt;</code></pre>
+            <pre tabindex="0" class="language-html"><code>&lt;label&gt;
+  &lt;input type=&quot;checkbox&quot; switch checked&gt;
+  Toggle switch
+&lt;/label&gt;</code></pre>
           </div>
         </details>
         <details>
