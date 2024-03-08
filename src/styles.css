@@ -4,7 +4,7 @@
 
 @layer components {
     .traditional {
-        @apply inline-flex items-center rounded-full w-16 h-8 relative;
+        @apply inline-flex items-center rounded-full w-14 h-8 relative;
     }
 
     .traditional:has(input[type="checkbox"]) {
@@ -21,7 +21,7 @@
     }
 
     .traditional:has(input[type="checkbox"]:checked)::before {
-        @apply translate-x-7;
+        @apply translate-x-5;
     }
 
     .traditional:focus-within {
